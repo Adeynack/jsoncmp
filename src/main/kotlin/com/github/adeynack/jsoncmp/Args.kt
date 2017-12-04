@@ -15,4 +15,9 @@ class Args(parser: ArgParser) {
         help = "Path to the file considered as the 'expected' (aka 'right') in the comparison."
     ).default(null)
 
+    val gui by parser.flagging(
+        "--gui", "-g",
+        help = "Use a GUI front-end."
+    )
+
 }
